@@ -40,9 +40,11 @@
 
 </div>
 
-<div class="theme-editor">
+<<button class="settings-btn" onclick="toggleSettings()">⚙</button>
 
-    <h2>Theme Editor</h2>
+<div class="theme-editor hidden" id="themePanel">
+
+    <h2>Theme Settings</h2>
 
     <div class="setting">
         <label>Body Background</label>
@@ -60,31 +62,14 @@
     </div>
 
     <div class="setting">
-        <label>Display Text</label>
-        <input type="color" data-var="--display-text">
-    </div>
-
-    <div class="setting">
         <label>Number Buttons</label>
         <input type="color" data-var="--number-bg">
     </div>
 
-    <div class="setting">
-        <label>Operator Buttons</label>
-        <input type="color" data-var="--operator-bg">
-    </div>
+    <button onclick="darkTheme()">Dark</button>
+    <button onclick="lightTheme()">Light</button>
+    <button onclick="resetTheme()">Reset</button>
 
-    <div class="setting">
-        <label>Equals Button</label>
-        <input type="color" data-var="--equals-bg">
-    </div>
-
-    <div class="setting">
-        <label>Clear Button</label>
-        <input type="color" data-var="--clear-bg">
-    </div>
-
-    
 </div>
 
 <script src="script.js"></script>

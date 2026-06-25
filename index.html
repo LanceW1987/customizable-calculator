@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Theme Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <input class="display" id="display" readonly>
+
+    <div class="buttons">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="append('/')">÷</button>
+        <button class="operator" onclick="append('*')">×</button>
+        <button class="operator" onclick="append('-')">−</button>
+
+        <button class="number" onclick="append('7')">7</button>
+        <button class="number" onclick="append('8')">8</button>
+        <button class="number" onclick="append('9')">9</button>
+        <button class="operator" onclick="append('+')">+</button>
+
+        <button class="number" onclick="append('4')">4</button>
+        <button class="number" onclick="append('5')">5</button>
+        <button class="number" onclick="append('6')">6</button>
+        <button class="equals" onclick="calculate()">=</button>
+
+        <button class="number" onclick="append('1')">1</button>
+        <button class="number" onclick="append('2')">2</button>
+        <button class="number" onclick="append('3')">3</button>
+
+        <button class="number" onclick="append('0')">0</button>
+        <button class="number" onclick="append('.')">.</button>
+        <button class="number" onclick="backspace()">⌫</button>
+    </div>
+
+</div>
+
+<div class="theme-editor">
+
+    <h2>Theme Editor</h2>
+
+    <div class="setting">
+        <label>Body Background</label>
+        <input type="color" data-var="--body-bg">
+    </div>
+
+    <div class="setting">
+        <label>Calculator Background</label>
+        <input type="color" data-var="--calc-bg">
+    </div>
+
+    <div class="setting">
+        <label>Display Background</label>
+        <input type="color" data-var="--display-bg">
+    </div>
+
+    <div class="setting">
+        <label>Display Text</label>
+        <input type="color" data-var="--display-text">
+    </div>
+
+    <div class="setting">
+        <label>Number Buttons</label>
+        <input type="color" data-var="--number-bg">
+    </div>
+
+    <div class="setting">
+        <label>Operator Buttons</label>
+        <input type="color" data-var="--operator-bg">
+    </div>
+
+    <div class="setting">
+        <label>Equals Button</label>
+        <input type="color" data-var="--equals-bg">
+    </div>
+
+    <div class="setting">
+        <label>Clear Button</label>
+        <input type="color" data-var="--clear-bg">
+    </div>
+
+    
+</div>
+
+<script src="script.js"></script>
+<link rel="manifest" href="manifest.json">
+</body>
+</html>

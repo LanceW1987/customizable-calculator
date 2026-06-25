@@ -1,0 +1,109 @@
+:root{
+    --body-bg:#1e1e1e;
+    --calc-bg:#2d2d2d;
+    --display-bg:#111;
+    --display-text:#fff;
+    --number-bg:#555555;
+    --number-text:#fff;
+    --operator-bg:#ff9500;
+    --operator-text:#fff;
+    --equals-bg:#28a745;
+    --equals-text:#fff;
+    --clear-bg:#dc3545;
+    --clear-text:#fff;
+}
+
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+
+    background:var(--body-bg);
+}
+
+.calculator{
+    width:320px;
+    padding:20px;
+    border-radius:15px;
+    background:var(--calc-bg);
+}
+
+.display{
+    width:100%;
+    height:70px;
+    margin-bottom:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:var(--display-bg);
+    color:var(--display-text);
+
+    font-size:2rem;
+    text-align:right;
+    padding:10px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+button{
+    height:60px;
+    border:none;
+    border-radius:10px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+.number{
+    background:var(--number-bg);
+    color:var(--number-text);
+}
+
+.operator{
+    background:var(--operator-bg);
+    color:var(--operator-text);
+}
+
+.equals{
+    background:var(--equals-bg);
+    color:var(--equals-text);
+}
+
+.clear{
+    background:var(--clear-bg);
+    color:var(--clear-text);
+}
+
+.theme-editor{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+.setting{
+    margin-bottom:10px;
+}
+
+.setting label{
+    display:block;
+    margin-bottom:5px;
+}
+
+input[type="color"]{
+    width:100%;
+    height:40px;
+}
